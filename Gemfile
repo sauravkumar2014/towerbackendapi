@@ -21,9 +21,10 @@ gem 'puma', '~> 3.7'
 gem 'activerecord-import'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'crono'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
+gem 'rest-client'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
