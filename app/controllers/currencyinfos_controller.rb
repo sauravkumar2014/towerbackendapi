@@ -8,6 +8,12 @@ class CurrencyinfosController < ApplicationController
     render json: @currencyinfos
   end
 
+  # GET /currencyinfos/subshow/symbol
+  def subshow
+    @currencyinfo = Currencyinfo.where(:symbol => params[:symbol]).first
+    render json: @currencyinfo
+  end
+
   # GET /currencyinfos/symbol
   def show
     @currencyinfo = Currencyinfo.where(:symbol => params[:symbol]).first
