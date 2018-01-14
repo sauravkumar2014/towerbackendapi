@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-01-14
+  txVolume: 
+  txCount: 1.5
+  marketcap: 
+  price: 1.5
+  exchangeVolume: 1.5
+  generatedCoins: 1.5
+  fees: 
+
+two:
+  date: 2018-01-14
+  txVolume: 
+  txCount: 1.5
+  marketcap: 
+  price: 1.5
+  exchangeVolume: 1.5
+  generatedCoins: 1.5
+  fees: 
