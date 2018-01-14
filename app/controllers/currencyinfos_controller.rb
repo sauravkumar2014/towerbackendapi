@@ -1,5 +1,5 @@
 class CurrencyinfosController < ApplicationController
-  before_action :set_currencyinfo, only: [:show, :update, :destroy]
+  before_action :set_currencyinfo, only: [:update, :destroy]
 
   # GET /currencyinfos
   def index
@@ -8,9 +8,10 @@ class CurrencyinfosController < ApplicationController
     render json: @currencyinfos
   end
 
-  # GET /currencyinfos/1
+  # GET /currencyinfos/symbol
   def show
-    render json: @currencyinfo
+    @currencyinfo = Currencyinfo.where(:symbol => params[:symbol]).first
+    render json: {currencyinfo: @currencyinfo,curprices: @currencyinfo.currencyprices}
   end
 
   # POST /currencyinfos
